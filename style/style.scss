@@ -163,7 +163,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding: 0 10px;
-  width: 60%;
+  width: calc(320px + (1000 - 320) * ((100vw - 320px) / (1920 - 320)));
   height: 100vh;
   // background-color: #173d7c;
 }
