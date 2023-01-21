@@ -72,8 +72,8 @@
     <div class="particle"></div>
     <div class="particle"></div>
   </div>
-  
-  <div class="container">
+
+  <div class="container" data-tilt-axis="x">
     <svg viewBox="0 0 1260 930" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect fill="#1E1E1E" />
       <g id="Slide 16:9 - 1" clip-path="url(#clip0_0_1)">
@@ -1525,8 +1525,18 @@
   </div>
 
 
+  <script src="js/vanilla-tilt.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".container"), {
+      max: 4,
+      speed: 200,
+      reverse: true,
+      
+    });
+
+  </script>
 </body>
 
 </html>
