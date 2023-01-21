@@ -24,9 +24,3 @@ gsap.to('#Vector_10_2', {
   scrub: true,
 })
 
-$('body').mousemove(function(e) {
-  var amountMovedX = (e.pageX * -0.53 / 6);
-  var amountMovedY = (e.pageY * -0.53 / 6);
-  $('.redGirl').css('left', amountMovedX + 'px');
-   $('.redGirl').css('top', amountMovedY + 'px');
-});
